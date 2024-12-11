@@ -10,49 +10,59 @@
     <meta name="Description" content="Demonstration for rpg-me" />
 
     <style>
-      /* Resetting basic styles */
       html,
       body {
+        height: 130%;
         margin: 0;
         padding: 0;
-        height: 180%;
+        /* Light pink background */
+        font-family: Arial, sans-serif;
+        color: #333;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: "Roboto", Arial, sans-serif; /* Updated font */
-        color: #333;
-        background-color: #e18181; /* Light gray background for better contrast */
+        min-height: 100vh;
+        background-color: #bd7a75;
       }
 
       .container {
-        background: #facbcb;
-        padding: 40px;
-        border-radius: 12px;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
-        text-align: center;
-        max-width: 600px;
-        width: 90%;
+        text-align: center; /* Center the text inside */
+        background-color: rgb(245, 217, 217);
+        padding: 30px;
+        border-radius: 100px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
       }
 
+      .charTitle {
+        margin: 0px 0px;
+      }
       .projTitle {
         margin: 0;
         font-size: 1.8rem;
         font-weight: bold;
-        color: #ff6f61; /* Vibrant accent color */
-      }
-
-      rpg-me {
-        display: block;
-        margin: 20px auto;
+        color: #ff6f61;
+        padding: 10px;
       }
     </style>
-    <title>rpg-me</title>
+    <title>ist-256-project-2</title>
   </head>
 
   <body>
+    <script type="module">
+      import "@haxtheweb/rpg-character/rpg-character.js";
+    </script>
+
+    <div id="demo">
+      <!-- <rpg-character
+      literalseed
+      seed="1505537481"
+    ></rpg-character> -->
     <div class="container">
       <h4 class="projTitle">rpg-me</h4>
-      <rpg-me seed=""></rpg-me>
+
+      <rpg-me seed=""> </rpg-me>
+      <!-- circle="1" fire="1" walking="1"-->
     </div>
     <script type="module" src="rpg-me.js"></script>
   </body>
